@@ -10,7 +10,7 @@ const Yelp = {
                 }
             }
             )
-            .then(respones => Response.json())
+            .then(Response => Response.json())
             .then(jsonResponse => {
                 if (jsonResponse.businesses) {
                     return jsonResponse.businesses.map( business => {
